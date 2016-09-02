@@ -1,0 +1,60 @@
+# OS X Finder
+.DS_Store
+
+# Xcode per-user config
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xccheckout
+*.pbxuser
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+# Build products
+build/
+DerivedData/
+*.o
+*.LinkFileList
+*.hmap
+
+# Automatic backup files
+*~.nib/
+*.swp
+*~
+*.dat
+*.dep
+
+# Cocoapods
+Pods
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+Carthage/Build
+
+# AppCode specific files
+.idea/
+*.generated.swift
+*.iml
+
+# Bundler
+Gemfile.lock
+.bundle
+
+# Fastlane
+fastlane/report.xml
+fastlane/README.md
+fastlane/screenshots
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
