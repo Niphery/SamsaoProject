@@ -27,8 +27,6 @@ class MainVC: UIViewController {
         navigationController?.navigationBar.barTintColor = UIColor(red: 255/255, green: 85/255, blue: 64/255, alpha: 1)
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
-//        .navigationBar.barTintColor = UIColor.greenColor()
-        
         self.gitHub = GitHub(username: username)
         self.gitHub.getRepos {
             self.tableView.reloadData()
