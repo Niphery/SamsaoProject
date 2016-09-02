@@ -8,4 +8,6 @@ target 'SamsaoTest' do
   # Pods for SamsaoTest
 	pod 'Alamofire'
     pod 'SFDraggableDialogView'
+    pod 'pop', '~> 1.0'
+    pod 'NVActivityIndicatorView'
 end

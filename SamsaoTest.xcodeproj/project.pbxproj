@@ -11,11 +11,18 @@
 		3B6DC9C6949F1496A9D5C198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8741C4E4D2CAB4A7583898 /* AppDelegate.swift */; };
 		A9DA4C749648116FFB527341 /* Pods_SamsaoTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17953598284035F5EDADC3D /* Pods_SamsaoTest.framework */; };
 		AB1779A30856A2073F879323 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3B97A64AF591F10D3D5F03 /* Foundation.framework */; };
-		C94441DE1D78E69E00FE63D2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94441DD1D78E69E00FE63D2 /* MainVC.swift */; };
+		C94441DE1D78E69E00FE63D2 /* ReposVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94441DD1D78E69E00FE63D2 /* ReposVC.swift */; };
 		C94441E01D78E72800FE63D2 /* GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94441DF1D78E72800FE63D2 /* GitHub.swift */; };
 		C94441E21D78E96700FE63D2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94441E11D78E96700FE63D2 /* Constants.swift */; };
 		C94441E41D78EBD100FE63D2 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94441E31D78EBD100FE63D2 /* Repo.swift */; };
 		C94441E61D78FA2600FE63D2 /* SFDraggableDialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C94441E51D78FA2600FE63D2 /* SFDraggableDialogView.xib */; };
+		C94441E81D792A9800FE63D2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94441E71D792A9800FE63D2 /* CustomTextField.swift */; };
+		C94441EA1D792B8D00FE63D2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94441E91D792B8D00FE63D2 /* MainVC.swift */; };
+		C94441EC1D792D6B00FE63D2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94441EB1D792D6B00FE63D2 /* CustomButton.swift */; };
+		C94441EE1D79353800FE63D2 /* CustomActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94441ED1D79353800FE63D2 /* CustomActivityIndicator.swift */; };
+		C94441F01D79453100FE63D2 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94441EF1D79453100FE63D2 /* DetailVC.swift */; };
+		C94441F21D794A0300FE63D2 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94441F11D794A0300FE63D2 /* WebVC.swift */; };
+		C94441F41D794EBE00FE63D2 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94441F31D794EBE00FE63D2 /* CustomImageView.swift */; };
 		E02C6D09E4754C050189D6D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B746D45E61C4B90FB461CA /* Main.storyboard */; };
 		EED19C54F77984A4ED10FBE9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5428F1A10283C97E401F946 /* Settings.bundle */; };
 		FF0370D8EABF727B202A4634 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03F27EA19207DBB02CA1252 /* Images.xcassets */; };
@@ -42,11 +49,18 @@
 		AD8741C4E4D2CAB4A7583898 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B03F27EA19207DBB02CA1252 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B6036B8D742BE2D0B4E6A1A4 /* Pods-SamsaoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsaoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SamsaoTest/Pods-SamsaoTest.debug.xcconfig"; sourceTree = "<group>"; };
-		C94441DD1D78E69E00FE63D2 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		C94441DD1D78E69E00FE63D2 /* ReposVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposVC.swift; sourceTree = "<group>"; };
 		C94441DF1D78E72800FE63D2 /* GitHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHub.swift; sourceTree = "<group>"; };
 		C94441E11D78E96700FE63D2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
 		C94441E31D78EBD100FE63D2 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		C94441E51D78FA2600FE63D2 /* SFDraggableDialogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFDraggableDialogView.xib; sourceTree = "<group>"; };
+		C94441E71D792A9800FE63D2 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		C94441E91D792B8D00FE63D2 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		C94441EB1D792D6B00FE63D2 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C94441ED1D79353800FE63D2 /* CustomActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicator.swift; sourceTree = "<group>"; };
+		C94441EF1D79453100FE63D2 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		C94441F11D794A0300FE63D2 /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		C94441F31D794EBE00FE63D2 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		E17953598284035F5EDADC3D /* Pods_SamsaoTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamsaoTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBB2DCC1CBF50064D4369A2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B746D45E61C4B90FB461CA /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -174,7 +188,10 @@
 		C94441DA1D78E62700FE63D2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C94441DD1D78E69E00FE63D2 /* MainVC.swift */,
+				C94441E91D792B8D00FE63D2 /* MainVC.swift */,
+				C94441DD1D78E69E00FE63D2 /* ReposVC.swift */,
+				C94441EF1D79453100FE63D2 /* DetailVC.swift */,
+				C94441F11D794A0300FE63D2 /* WebVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -191,6 +208,10 @@
 		C94441DC1D78E63600FE63D2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C94441E71D792A9800FE63D2 /* CustomTextField.swift */,
+				C94441EB1D792D6B00FE63D2 /* CustomButton.swift */,
+				C94441ED1D79353800FE63D2 /* CustomActivityIndicator.swift */,
+				C94441F31D794EBE00FE63D2 /* CustomImageView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -390,10 +411,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C94441E01D78E72800FE63D2 /* GitHub.swift in Sources */,
+				C94441F41D794EBE00FE63D2 /* CustomImageView.swift in Sources */,
 				3B6DC9C6949F1496A9D5C198 /* AppDelegate.swift in Sources */,
+				C94441F21D794A0300FE63D2 /* WebVC.swift in Sources */,
+				C94441E81D792A9800FE63D2 /* CustomTextField.swift in Sources */,
 				C94441E41D78EBD100FE63D2 /* Repo.swift in Sources */,
-				C94441DE1D78E69E00FE63D2 /* MainVC.swift in Sources */,
+				C94441EC1D792D6B00FE63D2 /* CustomButton.swift in Sources */,
+				C94441F01D79453100FE63D2 /* DetailVC.swift in Sources */,
+				C94441EE1D79353800FE63D2 /* CustomActivityIndicator.swift in Sources */,
+				C94441DE1D78E69E00FE63D2 /* ReposVC.swift in Sources */,
 				C94441E21D78E96700FE63D2 /* Constants.swift in Sources */,
+				C94441EA1D792B8D00FE63D2 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

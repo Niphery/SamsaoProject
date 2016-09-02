@@ -14,6 +14,7 @@ import UIKit
 class GitHub {
     private var _username: String!
     private var _repos: [Repo]!
+    private var _avatar: UIImage?
     
     var reposURL: String {
         return "\(GITHUB_URL)/\(_username)/repos"
@@ -27,6 +28,13 @@ class GitHub {
         return _repos
     }
     
+    var avatar: UIImage {
+        if _avatar == nil {
+            return UIImage(named: "logo")!
+        }
+        return _avatar!
+    }
+    
     init(username: String) {
         self._username = username
         self._repos = [Repo]()
@@ -36,12 +44,28 @@ class GitHub {
         Alamofire.request(.GET, reposURL).responseJSON { (response) in
             if let datas = response.result.value as? [Dictionary<String, AnyObject>]{
                 
+                if let owner = datas[0]["owner"] as? Dictionary<String, AnyObject>, let avatar = owner["avatar_url"] as? String {
+                    Alamofire.request(.GET, avatar).validate(contentType: ["image/*"]).response(completionHandler: { (request, response, data, error) in
+                        if error == nil {
+                            if let image = UIImage(data: data!) {
+                                self._avatar = image
+                            }
+                        }
+                    })
+                }
+                
                 for data in datas {
-                    if let fullName = data["full_name"] as? String, let lastUpdate = data["updated_at"] as? String, let language = data["language"] as? String, let defaultBranch = data["default_branch"] as? String, let forksCount = data["forks"] as? Int {
+                    if let fullName = data["full_name"] as? String,
+                        let lastUpdate = data["updated_at"] as? String,
+                        let language = data["language"] as? String,
+                        let defaultBranch = data["default_branch"] as? String,
+                        let forksCount = data["forks"] as? Int,
+                        let detail = data["description"] as? String,
+                        let createdAt = data["created_at"] as? String,
+                        let url = data["svn_url"] as? String
+                         {
                         
-
-                        
-                        let repo = Repo(fullName: fullName, lastUpdate: self.convertStringToNSDate(lastUpdate), language: language, defaultBranch: defaultBranch, forksCount: forksCount)
+                        let repo = Repo(fullName: fullName, lastUpdate: self.convertStringToNSDate(lastUpdate), language: language, defaultBranch: defaultBranch, forksCount: forksCount, detail: detail, url: url, createdAt: self.convertStringToNSDate(createdAt))
                         
                         self._repos.append(repo)
                         

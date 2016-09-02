@@ -1,15 +1,21 @@
 PODS:
   - Alamofire (3.4.1)
+  - NVActivityIndicatorView (2.9)
+  - pop (1.0.9)
   - SFDraggableDialogView (1.1.4)
 
 DEPENDENCIES:
   - Alamofire
+  - NVActivityIndicatorView
+  - pop (~> 1.0)
   - SFDraggableDialogView
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  NVActivityIndicatorView: 0084f6be71bdf4735b5424ebfb530b1e3db3276c
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SFDraggableDialogView: cfe9b80b5fff19f7e0fda86dcabee8b03a4c3b44
 
-PODFILE CHECKSUM: 7eabd4b332cc313de48fdcb8b42cc3218673eda8
+PODFILE CHECKSUM: b51516d0ee029d232a50623c33ac3052dfe1ecc4
 
 COCOAPODS: 1.0.1
