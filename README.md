@@ -3,6 +3,8 @@
 Samsao GitHub repos listed with some extra Information
 
 Powered by:
--  Alamofire 
+- Alamofire 
 - https://github.com/kubatru/SFDraggableDialogView
+- pop
+- NVActivityIndicator
 
