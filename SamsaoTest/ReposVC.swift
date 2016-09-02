@@ -94,7 +94,7 @@ class ReposVC: UIViewController {
             dialogView.delegate = self
             dialogView.titleText = NSMutableAttributedString(string: "Infos")
             dialogView.messageText = self.createNSMutableString(repo)
-            dialogView.firstBtnText = "Ok".uppercaseString
+            dialogView.firstBtnText = "More Infos"
             dialogView.firstBtnBackgroundColor = UIColor(red: 255/255, green: 85/255, blue: 64/255, alpha: 1)
             dialogView.dialogBackgroundColor = UIColor(red: 224/255, green: 224/255, blue: 224/255, alpha: 0.9)
             dialogView.cornerRadius = 8.0
