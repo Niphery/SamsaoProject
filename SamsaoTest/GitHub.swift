@@ -41,6 +41,12 @@ class GitHub {
     }
     
     func getRepos(completed: DownloadCompleted) {
+        var oldRepos = [Repo]()
+        if self._repos.count > 0  {
+            oldRepos = self._repos
+            self._repos = [Repo]()
+        }
+        
         Alamofire.request(.GET, reposURL).responseJSON { (response) in
             if let datas = response.result.value as? [Dictionary<String, AnyObject>]{
                 
@@ -73,7 +79,11 @@ class GitHub {
                 }
 //                print("JSON: \(JSON[0]["id"])")
             }
-        completed()
+        
+            if self._repos.count == 0 {
+                self._repos = oldRepos
+            }
+            completed()
         }
     }
     
